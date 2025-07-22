@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Affirmation Dashboard</title>
+    <meta name="description" content="Start your day with positive affirmations and motivational quotes">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta tags for better SEO and social sharing -->
+    <meta property="og:title" content="Daily Affirmation Dashboard">
+    <meta property="og:description" content="Start your day with positive affirmations">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header section with greeting and theme toggle -->
+        <header class="header">
+            <div class="greeting-container">
+                <h1 id="greeting" class="greeting" aria-live="polite">Good Morning</h1>
+                <p class="greeting-subtitle">Here's your daily dose of positivity</p>
+            </div>
+            
+            <!-- Theme toggle button -->
+            <button 
+                id="theme-toggle" 
+                class="theme-toggle" 
+                aria-label="Toggle between light and dark theme"
+                title="Switch theme"
+                type="button"
+            >
+                <span class="theme-icon">🌙</span>
+            </button>
+        </header>
+        
+        <!-- Main content area -->
+        <main id="main-content" class="main-content">
+            <!-- Affirmation card -->
+            <div class="affirmation-card">
+                <div class="quote-icon" aria-hidden="true">"</div>
+                <blockquote 
+                    id="affirmation-text" 
+                    class="affirmation-text"
+                    cite="Daily Affirmations"
+                >
+                    Loading your daily affirmation...
+                </blockquote>
+                <footer class="affirmation-footer">
+                    <button 
+                        id="new-affirmation" 
+                        class="new-affirmation-btn"
+                        type="button"
+                        aria-label="Get a new affirmation"
+                    >
+                        ✨ New Affirmation
+                    </button>
+                </footer>
+            </div>
+            
+            <!-- Additional motivational section -->
+            <div class="motivation-section">
+                <h2 class="section-title">Remember</h2>
+                <div class="motivation-grid">
+                    <div class="motivation-item">
+                        <span class="motivation-emoji" aria-hidden="true">🌱</span>
+                        <p>Growth happens outside your comfort zone</p>
+                    </div>
+                    <div class="motivation-item">
+                        <span class="motivation-emoji" aria-hidden="true">⭐</span>
+                        <p>You have the power to create positive change</p>
+                    </div>
+                    <div class="motivation-item">
+                        <span class="motivation-emoji" aria-hidden="true">🚀</span>
+                        <p>Every small step counts toward your goals</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Daily Affirmation Dashboard. Spread positivity.</p>
+             <p> A project by Ankit Joshi</p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
